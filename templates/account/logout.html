@@ -2,13 +2,13 @@
 {% load crispy_forms_tags %}
 
 
-{% block page_title %} sign up< {% endblock page_title %}
+{% block page_title %} Logout {% endblock page_title %}
 
 {% block content %}
-    <h1>Sign Up</h1>
+    <h1>Logout</h1>
+    <h2>Are You Sure Want to Logout?</h2>
     <form action="" method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="SignUp">
+        <input type="submit" value="Are you sure?">
     </form>
 {% endblock content %}
